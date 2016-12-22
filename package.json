@@ -1,0 +1,28 @@
+{
+  "name": "ericzheng_less_tool",
+  "version": "1.0.0",
+  "description": "a less tool just for fun,is just a dummy demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/black-pony/ericzheng_less_tool.git"
+  },
+  "keywords": [
+    "itcast",
+    "shanghai_itcast",
+    "frontend",
+    "less"
+  ],
+  "author": "ericzheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/black-pony/ericzheng_less_tool/issues"
+  },
+  "homepage": "https://github.com/black-pony/ericzheng_less_tool#readme",
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}
