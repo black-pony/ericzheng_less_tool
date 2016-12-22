@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"node index.js source-dir src dist-dir dist"
+    "build": "node index.js source-dir src dist-dir dist",
+    "jianshi": "node watch.js source-dir src dist-dir dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/black-pony/ericzheng_less_tool#readme",
   "dependencies": {
+    "chokidar": "^1.6.1",
     "less": "^2.7.1",
     "node-notifier": "^4.6.1",
     "talog": "^1.0.0"

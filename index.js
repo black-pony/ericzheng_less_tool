@@ -6,16 +6,28 @@ const tlog = require('talog');
 
 //node a.js source-dir src dist-dir dist
 let arr = process.argv;
+if(arr.length <= 2){
+  throw '参数个数不对';
+}
 let sourceDir = arr[3];
 let distDir   = arr[5];
+var isDistDirExist = fs.existsSync(path.join(__dirname,distDir));
+if(!isDistDirExist){
+  notifier.notify({
+      'title':'error',
+      'sound':true,
+      'icon':path.join(__dirname,'eric.png'),
+      'message':'dist目录没有创建~~~'
+  });
+  return;
+}
 fs.readdir(path.join(__dirname,sourceDir),(err,files)=>{
   if(err){
     notifier.notify({
       'title':'error',
       'sound':true,
       'icon':path.join(__dirname,'eric.png'),
-      //O(∩_∩)O
-      'message':'CMD里输入的命令有问题~~~'
+      'message':'O(∩_∩)O CMD里输入的命令有问题~~~'
     });
   }else{
     if(files.length > 0){
