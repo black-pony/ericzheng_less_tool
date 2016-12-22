@@ -2,3 +2,5 @@
 /node_modules/*
 /.vsc/*
 /*.tmp
+/src/*
+/dist/*
