@@ -13,3 +13,4 @@ chokidar.watch(path.join(__dirname,sourceDir),{ignored: /(^|[\/\\])\../}).on("al
     less_tool(filePath,filePath.replace('.less','.css').replace(sourceDir,distDir));
   }
 });
+
